@@ -45,7 +45,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::addFiles()
 {
-    QStringList fileNames = QFileDialog::getOpenFileNames(this,tr("Open Fastq file"), QDir::homePath(), tr("Fastq Extension (*.fq *.fq.* *.fastq *.fastq.* *.trim *.trim.*);; Any Extension (*)"));
+    QStringList fileNames = QFileDialog::getOpenFileNames(this,tr("Open Fastq file"), QDir::homePath(), tr("Sequence Extension (*.fq *.fq.* *.fastq *.fastq.* *.trim *.trim.* *.bam *.ubam);; Any Extension (*)"));
     if (!fileNames.isEmpty())
     {
         for (QString file : fileNames)
